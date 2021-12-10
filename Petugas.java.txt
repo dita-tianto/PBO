@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package JavaApplication1;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author MOKLET-2
+ */
+public class Petugas implements NewInterface{
+ private ArrayList<String> namaPetugas = new ArrayList<String>();
+ private ArrayList<String> alamat = new ArrayList<String>();
+ private ArrayList<String> telepon = new ArrayList<String>();
+ 
+ public Petugas() {
+ this.namaPetugas.add("Leo");
+ this.alamat.add("kedung kandang");
+ this.telepon.add("081112223333");
+ }
+ public void setAlamat(int Alamat ){
+ this.alamat.add("alamat");
+ }
+ public String getAlamat(int id){
+ return this.alamat.get(id);
+ } 
+ public int getJmlPetugas(){
+ return this.namaPetugas.size();
+ } 
+ public void setNama(String namaPetugas ){
+ this.namaPetugas.add(namaPetugas);
+ }
+ 
+ public void setAlamat(String alamat ){
+ this.namaPetugas.add(alamat);
+ }
+ public void setTelepon(String telepon ){
+ this.namaPetugas.add(telepon);
+ }
+ 
+ public String getNama(int idPetugas){
+ return this.namaPetugas.get(idPetugas);
+ }
+ 
+
+ public String getalamat(int idPetugas){
+ return this.alamat.get(idPetugas);
+ }
+ 
+ public String getTelepon(int idPetugas){
+ return this.telepon.get(idPetugas);
+ } 
+}
+
+
